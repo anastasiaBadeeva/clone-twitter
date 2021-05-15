@@ -1,3 +1,16 @@
+Frontend:
+
+- TypeScript
+- ReactJS
+- Redux / Redux Saga
+- Immer
+- Reselect
+- React Router
+- Material UI
+- Axios
+- date-fns
+- Formik
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
