@@ -3,6 +3,7 @@ import { rootReducer } from './rootReducer';
 import createSagaMiddleware from 'redux-saga'
 import rootSaga from './saga';
 import { TweetsState } from './ducks/tweets/contracts/state';
+import { TagsState } from './ducks/tags/contracts/state';
 
 declare global {
   interface Window {
@@ -11,6 +12,7 @@ declare global {
 }
 export interface RootState {
   tweets: TweetsState;
+  tags: TagsState;
 }
 const sagaMiddleware = createSagaMiddleware()
 const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
