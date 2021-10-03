@@ -1,5 +1,5 @@
 import { Action } from "redux";
-import { Tweet } from "../../../../Components/Tweets";
+import { Tweet } from "../../../../Components/Tweet";
 import { TweetsState,LoadingState } from "../contracts/state";
 
 export enum TweetsActionsType {
