@@ -24,6 +24,8 @@ import { fetchTags } from '../../store/ducks/tags/actionsCreatores/actionsCreato
 import { Tags } from '../../Components/Tags';
 import { Route } from 'react-router-dom';
 import { BackButton } from '../../Components/BackButton';
+import { FullTweet } from '../components/FullTweet';
+import { fetchTweetData } from '../../store/ducks/tweet/actionsCreatores/actionsCreators';
 
 // TODO
 // 2. Попробовать сделать пункт "Главная" в меню
@@ -37,6 +39,7 @@ export const Home = (): React.ReactElement => {
   React.useEffect(() => {
     dispatch(fetchTweets());
     dispatch(fetchTags());
+    // dispatch(fetchTweetData());
   }, [dispatch]);
 
   return (
@@ -75,6 +78,7 @@ export const Home = (): React.ReactElement => {
                 tweets.map((tweet) => <Tweet key={tweet._id} classes={classes} {...tweet} />)
               )}
             </Route>
+            <Route path="/home/tweet/:id" component={FullTweet} exact />
           </Paper>
         </Grid>
         <Grid sm={3} md={3} item>
