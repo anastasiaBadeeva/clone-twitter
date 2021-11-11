@@ -25,7 +25,6 @@ import { Tags } from '../../Components/Tags';
 import { Route } from 'react-router-dom';
 import { BackButton } from '../../Components/BackButton';
 import { FullTweet } from '../components/FullTweet';
-import { fetchTweetData } from '../../store/ducks/tweet/actionsCreatores/actionsCreators';
 
 // TODO
 // 2. Попробовать сделать пункт "Главная" в меню
