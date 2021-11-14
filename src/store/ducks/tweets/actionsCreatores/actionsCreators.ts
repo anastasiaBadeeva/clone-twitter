@@ -28,4 +28,4 @@ export const fetchTweets = (): FetchSetTweetsActionInterface => ({
   type: TweetsActionsType.FETCH_TWEETS,
 })
 
-export type TweetsActions = SetTweetsActionInterface | SetTweetsLoadingStateInterface | FetchSetTweetsActionInterface | AddTweetActionInterface | FeatchAddTweetActionInterface
+export type TweetsActions = SetTweetsActionInterface | SetTweetsLoadingStateInterface | FetchSetTweetsActionInterface | AddTweetActionInterface | FeatchAddTweetActionInterface | SetAddFormStateActionInterface
